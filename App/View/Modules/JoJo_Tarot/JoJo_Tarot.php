@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shotcut icon" href="/View/Modules/Images/favicon.png">
+        <link rel="shotcut icon" href="/View/Modules/Images/Favicon.png">
 
         <link rel="stylesheet" type="text/css" href="/View/Modules/JoJo_Tarot/CSS/Styles.css">
 
