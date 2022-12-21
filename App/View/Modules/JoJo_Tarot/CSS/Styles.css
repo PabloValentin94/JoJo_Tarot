@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -17,4 +18,85 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
+}
+
+button {
+
+    font-size: 40px;
+    padding: 5px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+
+}
+
+#form_btn_anterior, #form_btn_proximo {
+
+    height: 75%;
+    width: 12.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+
+}
+
+#container, #rows_null {
+
+    height: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 5px dotted #FFFFFF;
+
+}
+
+#box {
+
+    height: 100%;
+    width: 50%;
+    background-image: url("/View/Modules/JoJo_Tarot/Images/JoJo_Tarot_Box.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+#card {
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#imagem {
+
+    height: 70%;
+    width: 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+#rows_null a {
+
+    color: #FF0000;
+
+}
+
+#rows_null a:hover {
+
+    color: #FFFF00;
+
+}
+
+#rows_null a:active {
+
+    color: #800080;
+
 }
