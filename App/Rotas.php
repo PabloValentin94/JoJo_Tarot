@@ -12,7 +12,7 @@ switch($url)
     break;
 
     default:
-        echo "Error 404;";
+        echo "Error 404";
 
 }
 
