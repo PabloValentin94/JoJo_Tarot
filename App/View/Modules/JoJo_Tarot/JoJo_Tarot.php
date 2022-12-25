@@ -18,40 +18,6 @@
 
     <body>
 
-        <?php foreach($model->rows as $item): ?>
-
-            <div id="container" style="order: 2;">
-
-                <div id="box">  </div>
-
-                <div id="card">
-
-                    <div id="imagem" style="background-image: url(<?= $item->imagem ?>);">  </div>
-
-                    <p style="font-size: 20px; color: #FFFFFF; margin-top: 5%; font-weight:bold;">
-                        
-                        <span style="color: #FF0000;"> Nome do Stand: </span> <span style="color: #FFFF00;"> <?= $item->nome_stand ?> </span> .
-                    
-                    </p>
-
-                </div>
-
-            </div>
-
-            <form id="form_btn_anterior" method="POST" action="/" style="order: 1;"> 
-        
-                <button type="submit" name="id_carta" value="<?= $item->id - 1 ?>"> < </button>
-        
-            </form>
-
-            <form id="form_btn_proximo" method="POST" action="/" style="order: 3;"> 
-        
-                <button type="submit" name="id_carta" value="<?= $item->id + 1 ?>"> > </button>
-
-            </form>
-
-        <?php endforeach ?>
-
         <?php if(count($model->rows) == 0): ?>
 
             <div id="rows_null">
@@ -63,6 +29,38 @@
                 </p>
 
             </div>
+
+        <?php else: ?>
+
+            <div id="container" style="order: 2;">
+
+                <div id="box">  </div>
+
+                <div id="card">
+
+                    <div id="imagem" style="background-image: url(<?= $model->rows[0]->imagem ?>);">  </div>
+
+                    <p style="font-size: 20px; color: #FFFFFF; margin-top: 5%; font-weight:bold;">
+                        
+                        <span style="color: #FF0000;"> Nome do Stand: </span> <span style="color: #FFFF00;"> <?= $model->rows[0]->nome_stand ?> </span>
+                    
+                    </p>
+
+                </div>
+
+            </div>
+
+            <form class="button" method="POST" action="/" style="order: 1;"> 
+        
+                <button type="submit" name="id_carta" value="<?= $model->rows[0]->id - 1 ?>"> < </button>
+        
+            </form>
+
+            <form class="button" method="POST" action="/" style="order: 3;"> 
+        
+                <button type="submit" name="id_carta" value="<?= $model->rows[0]->id + 1 ?>"> > </button>
+
+            </form>
 
         <?php endif ?>
         

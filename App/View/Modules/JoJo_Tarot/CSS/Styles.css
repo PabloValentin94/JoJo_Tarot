@@ -30,7 +30,7 @@ button {
 
 }
 
-#form_btn_anterior, #form_btn_proximo {
+.button {
 
     height: 75%;
     width: 12.5%;
