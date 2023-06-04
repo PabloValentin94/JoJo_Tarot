@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("/View/Modules/JoJo_Tarot/Images/Wallpaper.jpg");
+    background-image: url("../Images/Wallpaper.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -57,7 +57,7 @@ button {
 
     height: 100%;
     width: 50%;
-    background-image: url("/View/Modules/JoJo_Tarot/Images/JoJo_Tarot_Box.png");
+    background-image: url("../Images/JoJo_Tarot_Box.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -83,7 +83,7 @@ button {
 
 }
 
-#rows_null a {
+/*#rows_null a {
 
     color: #FF0000;
 
@@ -99,4 +99,4 @@ button {
 
     color: #800080;
 
-}
+}*/
