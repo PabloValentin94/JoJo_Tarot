@@ -59,7 +59,7 @@ function Mudar_Carta(condicao)
 
         }
 
-        console.log(indice_carta);
+        //console.log(indice_carta);
 
         document.getElementById("nome").innerHTML = cartas[indice_carta].nome_stand;
 
