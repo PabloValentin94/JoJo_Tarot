@@ -31,14 +31,14 @@ function Mudar_Carta(condicao)
     if(indice_carta - 1 < 0 && condicao == "anterior")
     {
 
-        alert("Esta é a primeira carta da lista! Veja as próximas.");
+        alert("Esta é a primeira carta do baralho! Veja as próximas.");
         
     }
 
     else if(indice_carta + 1 > 21 && condicao == "proxima")
     {
 
-        alert("Esta é a última carta da lista! Veja as anteriores.");
+        alert("Esta é a última carta do baralho! Veja as anteriores.");
 
     }
 
